@@ -14,7 +14,7 @@ $(document).ready(function () {
     })
 
 
-    $('#about').dblclick(function () {
+    $('#about').click(function () {
         // alert($(this).setAttribute('href','');
         $(".about-popup").show();
     });
