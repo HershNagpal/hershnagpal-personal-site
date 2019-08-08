@@ -1,0 +1,155 @@
+:root {
+    --light-teal: #38eed0;
+    --dark-teal: #3eceb6;
+    --light-pink: #F76CE3;
+    --light-purple: #d0b9e4;
+    --dark-purple: #a253a1;
+}
+
+html {
+    background-color: var(--light-teal);
+    /* background-image: url(images/JZS3.gif); */
+}
+
+@font-face {
+    font-family: "VCR";
+    src: url("../fonts/VCR.ttf");
+}
+@font-face {
+    font-family: "alien-encounters";
+    src: url("../fonts/Alien-Encounters-Regular.ttf")
+}
+@font-face {
+    font-family: "streamster";
+    src: url("../fonts/Streamster.ttf")
+}
+@font-face {
+    font-family: "virus01";
+    src: url("../fonts/Virus_01.ttf")
+}
+@font-face {
+    font-family: "ms-sans";
+    src: url("../fonts/MS_Sans_Serif.ttf")
+}
+
+.vcr {
+    font-family: "VCR";
+}
+
+.alien {
+    font-family: "alien-encounters";
+}
+
+.streamster {
+    font-family: "streamster";
+}
+
+.virus01 {
+    font-family: "virus01";
+}
+
+.ms-sans {
+    font-family: "ms-sans";
+}
+
+h1 {
+    font-size: 50px;
+    color: var(--light-pink);
+}
+
+h2 {
+    font-size: 35px;
+    color: var(--light-pink);
+}
+
+
+/* WINDOWS **********************************************/
+
+.icon {
+    padding-top: 35px;
+    margin: 20px;
+    display: inline-block;
+    /* height: 68px;
+    width: 50px; */
+    text-align: center;
+    vertical-align: bottom;
+    font-size: 16px;
+    color: white;
+}
+
+#experience {
+    background: url(../images/icons/txt.png) center top no-repeat;
+    background-size: 50px 50px;
+    
+}
+#about {
+    background: url(../images/icons/about.png) center top no-repeat;
+    background-size: 50px 50px;
+}
+#projects {
+    background: url(../images/icons/folder.png) center top no-repeat;
+    background-size: 50px 50px;
+}
+#resume {
+    background: url(../images/icons/doc.png) center top no-repeat;
+    background-size: 50px 50px;
+}
+
+#taskbar {
+    height: 40px;
+    background-color: rgb(192,192,192);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border-top: ridge 2px white;
+}
+
+#start {
+    background: url(../images/icons/win95.png) left center no-repeat;
+    background-size: 30px 25px;
+    text-align: right;
+    font-size: 20px;
+    float: left;
+    width: 75px;
+    height: 24px;
+    display: inline-block;
+    padding: 5px 4px 0px 1px;
+    margin-left: 4px;
+    margin-top: 2px;
+    cursor: default;
+    user-select: none;
+}
+
+.divider{
+    height:1px;
+    border-top: ridge 1px white;
+    border-bottom: ridge 1px grey;
+    margin: 2px ;
+}
+
+#notifications {
+    /* background: url(../images/icons/win95.png) left center no-repeat;
+    background-size: 30px 25px; */
+
+    margin-right: 4px;
+    margin-top: 2px;
+    border-top: inset 2px grey;
+    border-left: inset 2px grey;
+    border-bottom: inset 2px white;
+    border-right: inset 2px white;
+    /* padding-top: 17px; */
+    padding: 5px 4px 0px 5px;
+    display: inline-block;
+    float: right;
+    width: 80px;
+    height: 24px;
+}
+
+#clock {
+    display: inline-block;
+    /* float: right; */
+    text-align: right;
+    /* margin-top: -13px; */
+    font-size: 18px;
+}
