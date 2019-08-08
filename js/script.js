@@ -19,9 +19,15 @@ $(document).ready(function () {
         $(".about-popup").show();
     });
 
+    $('#resume').click(function () {
+        $(".resume-popup").show();
+    });
+
     $('.close-popup').click(function () {
         $(this).parent().parent().hide();
     })
+
+    $('.popup').css('transform', 'translate(0%,0%)');
 
 });
 
@@ -48,8 +54,18 @@ function checkTime(i) {
 
 // Drag and drop icons
 $(function() {
-    $(".icon").draggable();
-    $(".popup").draggable();
+    $('.icon').draggable();
+    $('.popup').draggable({
+        // cursor: move,
+        // stop: function(event, ui)
+        // {
+        //     $('.popup').zIndex(100);
+        // }
+    });
     $("html").droppable();
  });
 
+// Resizeable windows 
+$( function() {
+    $( ".resizable" ).resizable();
+} );
