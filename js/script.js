@@ -14,10 +14,14 @@ $(document).ready(function () {
     })
 
 
-    $('.icon').dblclick(function () {
+    $('#about').dblclick(function () {
         // alert($(this).setAttribute('href','');
-        
+        $(".about-popup").show();
     });
+
+    $('.close-popup').click(function () {
+        $(this).parent().parent().hide();
+    })
 
 });
 
@@ -45,7 +49,7 @@ function checkTime(i) {
 // Drag and drop icons
 $(function() {
     $(".icon").draggable();
-    $(".window").draggable();
+    $(".popup").draggable();
     $("html").droppable();
  });
 

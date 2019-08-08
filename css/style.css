@@ -11,6 +11,18 @@ html {
     /* background-image: url(images/JZS3.gif); */
 }
 
+.clearfix {
+    overflow: hidden;
+    
+    /* overflow-x: auto; */
+    /* overflow-y: scroll; */
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 @font-face {
     font-family: "VCR";
     src: url("../fonts/VCR.ttf");
@@ -153,3 +165,5 @@ h2 {
     /* margin-top: -13px; */
     font-size: 18px;
 }
+
+/* POPUPS ***********************************************/
