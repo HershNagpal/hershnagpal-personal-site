@@ -53,13 +53,10 @@ $(function() {
     $('.icon').draggable();
     $('.popup').draggable({
         scroll: false
-        // cursor: move,
-        // stop: function(event, ui)
-        // {
-        //     $('.popup').zIndex(100);
-        // }
     });
     $("html").droppable();
+    // $('#about-popup').resizable({minHeight:300, minWidth:500});
+    // $('#resume-popup').resizable();
 });
 
 function unfocusWindows() {
@@ -83,6 +80,11 @@ $('#about').click(function () {
     $('#about-taskbar').addClass('taskbar-icon-click');
     unfocusWindows();
     $('#about-popup').css('z-index','3');
+    $('#about-popup').css('top','10%');
+    $('#about-popup').css('left','25%');
+    // $('#about-popup').css('height', '45%');
+    // $('#about-popup').css('width', '45%');
+
 });
 // Close the about page when the x is clicked
 $('.close-about').click(function () {
@@ -104,6 +106,8 @@ $('#resume-taskbar').click(function () {
     $('#resume-popup').toggle();
     // $(this).toggleClass("taskbar-icon-rest");
     $(this).toggleClass('taskbar-icon-click');
+    unfocusWindows();
+    $('#resume-popup').css('z-index','3');
 });
 // Show resume when clicking on the taskbar icon
 $('#resume').click(function () {
@@ -112,6 +116,10 @@ $('#resume').click(function () {
     $('#resume-taskbar').addClass('taskbar-icon-click');
     unfocusWindows();
     $('#resume-popup').css('z-index','3');
+    $('#resume-popup').css('top','5%');
+    $('#resume-popup').css('left','15%');
+    // $('#resume-popup').css('height', '90%');
+    // $('#resume-popup').css('width', '70%');
 });
 // Minimize the resume window when the _ button is clicked
 $('#minimize-resume').click(function () {

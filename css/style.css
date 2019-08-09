@@ -133,6 +133,7 @@ h2 {
     margin-top: 2px;
     cursor: default;
     user-select: none;
+    /* margin-right:10px; */
 }
 .taskbar-icon-rest {
     border-top: ridge 2px white;
@@ -285,12 +286,15 @@ div.popup-text button{
     display: none;
     height: 45%;
     width: 45%;
+    /* size: 45%; */
     /* padding: 2px; */
 }
 
 #resume-popup {
     background-color: #C0C0C0;
     display: none;
+    top: 5%;
+    left: 15%;
     height: 90%;
     width: 70%;
 }
