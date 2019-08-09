@@ -87,21 +87,24 @@ h2 {
     text-align: center;
     vertical-align: bottom;
     font-size: 16px;
+    font-weight: 500;
     color: white;
 }
 
-#experience {
+#about {
     background: url(../images/icons/txt.png) center top no-repeat;
     background-size: 50px 50px;
-    
 }
-#about {
-    background: url(../images/icons/about.png) center top no-repeat;
+.ie {
+    background: url(../images/icons/ie.png) center top no-repeat;
     background-size: 50px 50px;
 }
-#projects {
-    background: url(../images/icons/folder.png) center top no-repeat;
+#linkedin {
+    background: url(../images/icons/ie.png) center top no-repeat;
     background-size: 50px 50px;
+}
+#instagram {
+
 }
 #resume {
     background: url(../images/icons/doc.png) center top no-repeat;
@@ -117,6 +120,7 @@ h2 {
     right: 0px;
     border-top: ridge 2px white;
     z-index: 99;
+    
 }
 
 #start {
@@ -153,24 +157,33 @@ h2 {
     font-size: 20px;
     font-family: "ms-sans";
     max-width: 200px;
+    min-width: 75px;
     width: 10%;
     height: 24px;
     display: inline-block;
-    padding: 5px 4px 0px 25px;
+    padding: 5px 4px 0px 27px;
     margin-left: 4px;
     margin-top: 2px;
     cursor: default;
+    text-overflow: ellipsis;
     user-select: none;
 }
 #about-taskbar {
     display: none;
-    background: url(../images/icons/about.png) left center no-repeat;
+    background: url(../images/icons/txt.png) left center no-repeat;
     background-size: 20px;
     float: left;
 }
 #resume-taskbar {
     display: none;
     background: url(../images/icons/doc.png) left center no-repeat;
+    background-size: 20px;
+    float: left;
+}
+#ie-taskbar {
+    width:15%;
+    display: none;
+    background: url(../images/icons/ie.png) left center no-repeat;
     background-size: 20px;
     float: left;
 }
@@ -293,7 +306,7 @@ div.popup-text button{
 #resume-popup {
     background-color: #C0C0C0;
     display: none;
-    top: 5%;
+    top: 2%;
     left: 15%;
     height: 90%;
     width: 70%;
@@ -302,6 +315,17 @@ div.popup-text button{
 #resume-display {
     height: 100%;
     width: 100%;
+}
+#ie-popup {
+    display: none;
+    height: 90%;
+    width: 70%;
+    top: 4%;
+    left: 10%;
+}
+#ie-frame {
+    height: 100%;
+    width: 99%;
 }
 
 #about-popup .popup-text p {

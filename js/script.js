@@ -14,7 +14,6 @@ $(document).ready(function () {
     });
     // Toggle the about page when the taskbar is clicked
 
-    
     // Close windows when clicking close button
     $('.close-popup').click(function () {
         $(this).parent().parent().hide();
@@ -101,7 +100,7 @@ $('#minimize-about').click(function () {
 
 
 // RESUME PAGE /////////////////////////////////////////
-// Show resume when clicking icon
+// Show resume when clicking taskbar icon
 $('#resume-taskbar').click(function () {
     $('#resume-popup').toggle();
     // $(this).toggleClass("taskbar-icon-rest");
@@ -109,14 +108,14 @@ $('#resume-taskbar').click(function () {
     unfocusWindows();
     $('#resume-popup').css('z-index','3');
 });
-// Show resume when clicking on the taskbar icon
+// Show resume when clicking on the icon
 $('#resume').click(function () {
     $("#resume-popup").show();
     $("#resume-taskbar").show();
     $('#resume-taskbar').addClass('taskbar-icon-click');
     unfocusWindows();
     $('#resume-popup').css('z-index','3');
-    $('#resume-popup').css('top','5%');
+    $('#resume-popup').css('top','2%');
     $('#resume-popup').css('left','15%');
     // $('#resume-popup').css('height', '90%');
     // $('#resume-popup').css('width', '70%');
@@ -132,4 +131,56 @@ $('.close-resume').click(function () {
     $("#resume-taskbar").hide();
     $('#resume-taskbar').removeClass('taskbar-icon-click');
     $('#resume-popup').css('z-index','1');
+});
+
+// INTERNET PAGES //////////////////////////////////////
+$('#linkedin').click(function () {
+    $('#ie-frame').attr('src','https://www.linkedin.com/in/hershnagpal');
+    $('#ie-title').text("  Hersh's Linkedin Page - Microsoft Internet Explorer");
+});
+
+$('#instagram').click(function () {
+    $('#ie-frame').attr('src','https://www.instagram.com/wafer_wave');
+    $('#ie-title').text("  wafer_wave's Instagram Page - Microsoft Internet Explorer");
+});
+
+//Open pages on doubleclick
+$('#linkedin').dblclick(function () {
+    window.open('https://www.linkedin.com/in/hershnagpal','_blank');
+});
+$('#instagram').dblclick(function () {
+    window.open('https://www.instagram.com/wafer_wave','_blank');
+});
+
+// Minimize the ie window when the _ button is clicked
+$('#minimize-ie').click(function () {
+    $("#ie-popup").hide();
+    $('#ie-taskbar').removeClass('taskbar-icon-click');
+});
+// Close the ie window when the 'x' is clicked
+$('.close-ie').click(function () {
+    $("#ie-popup").hide();
+    $("#ie-taskbar").hide();
+    $('#ie-taskbar').removeClass('taskbar-icon-click');
+    $('#ie-popup').css('z-index','1');
+});
+// Show ie window when an ie icon is clicked
+$('.ie').click(function () {
+    $("#ie-popup").show();
+    $("#ie-taskbar").show();
+    $('#ie-taskbar').addClass('taskbar-icon-click');
+    unfocusWindows();
+    $('#ie-popup').css('z-index','3');
+    $('#ie-popup').css('top','2%');
+    $('#ie-popup').css('left','15%');
+    // $('#resume-popup').css('height', '90%');
+    // $('#resume-popup').css('width', '70%');
+});
+// Show ie window when clicking on the taskbar icon
+$('#ie-taskbar').click(function () {
+    $('#ie-popup').toggle();
+    // $(this).toggleClass("taskbar-icon-rest");
+    $(this).toggleClass('taskbar-icon-click');
+    unfocusWindows();
+    $('#ie-popup').css('z-index','3');
 });
