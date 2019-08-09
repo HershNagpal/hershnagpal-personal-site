@@ -7,7 +7,8 @@
 }
 
 html {
-    background-color: var(--light-teal);
+    background-color: var(--dark-teal);
+    overflow: hidden;
     /* background-image: url(images/JZS3.gif); */
 }
 
@@ -132,6 +133,45 @@ h2 {
     cursor: default;
     user-select: none;
 }
+.taskbar-icon-rest {
+    border-top: ridge 2px white;
+    border-left: ridge 2px white;
+    border-bottom: ridge 2px black;
+    border-right: ridge 2px black;
+}
+.taskbar-icon-click {
+    border-top: inset 2px black;
+    border-left: inset 2px black;
+    border-bottom: inset 2px white;
+    border-right: inset 2px white;
+}
+.taskbar-icon {
+    /* display: none; */
+    text-align: left;
+    font-size: 20px;
+    font-family: "ms-sans";
+    max-width: 200px;
+    width: 10%;
+    height: 24px;
+    display: inline-block;
+    padding: 5px 4px 0px 25px;
+    margin-left: 4px;
+    margin-top: 2px;
+    cursor: default;
+    user-select: none;
+}
+#about-taskbar {
+    display: none;
+    background: url(../images/icons/about.png) left center no-repeat;
+    background-size: 20px;
+    float: left;
+}
+#resume-taskbar {
+    display: none;
+    background: url(../images/icons/doc.png) left center no-repeat;
+    background-size: 20px;
+    float: left;
+}
 
 .divider{
     height:1px;
@@ -240,7 +280,7 @@ div.popup-text button{
     bottom:0px;
 }
 
-.about-popup {
+#about-popup {
     background-color: #C0C0C0;
     display: none;
     height: 45%;
@@ -248,19 +288,19 @@ div.popup-text button{
     /* padding: 2px; */
 }
 
-.resume-popup {
+#resume-popup {
     background-color: #C0C0C0;
     display: none;
     height: 90%;
     width: 70%;
 }
 
-.resume-display {
+#resume-display {
     height: 100%;
     width: 100%;
 }
 
-.about-popup .popup-text p {
+#about-popup .popup-text p {
     text-shadow: none;
     font-family: 'Times New Roman', Times, serif;
     color: black;
@@ -282,4 +322,9 @@ div.popup-text button{
     margin: 2px;
     font-family: "ms-sans";
     font-weight: 100;
+}
+
+.maximize {
+    width: 100%;
+    length: 100%;
 }

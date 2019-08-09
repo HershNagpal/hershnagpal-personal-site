@@ -45,40 +45,42 @@
         </div>
     </div>
 
-    <div class="popup resizeable about-popup clearfix">
+    <div id="about-popup" class="popup resizeable clearfix">
         <div class="title clearfix">
             <img src="images/icons/about.png" width="18" height="18" class="title"/>
             <p class="title">&nbsp;&nbsp;&nbsp;about.txt - Notepad</p>
-            <button class="close-popup">X</button>
-            <button>&#9633;</button>
-            <button>_</button>
+            <button class="close-popup close-about">X</button>
+            <button id="maximize-about">&#9633;</button>
+            <button id="minimize-about">_</button>
         </div>
         <p class="menu-bar">File&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Format&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Help</p>
     
         <div class="text-box"> 
             <div class="popup-text">
-                <p>I'm Hersh! I'm currently a software engineering student at RIT in Rochester, NY. I have a passion for web design, music, photography, and many more hobbies that come and go. </p>
+                <p>I'm currently a software engineering student at RIT in Rochester, NY. I have a passion for web design, music, photography, and many more hobbies that come and go. </p>
             </div>
         </div>
     </div>
 
-    <div class="popup resizeable resume-popup clearfix">
+    <div id="resume-popup" class="popup resizeable clearfix">
         <div class="title clearfix">
             <img src="images/icons/doc.png" width="18" height="18" class="title"/>
             <p class="title">&nbsp;&nbsp;&nbsp;resume.pdf - Notepad</p>
-            <button class="close-popup">X</button>
-            <button>&#9633;</button>
-            <button>_</button>
+            <button class="close-popup close-resume">X</button>
+            <button id="maximise-resume">&#9633;</button>
+            <button id="minimize-resume">_</button>
         </div>
         <p class="menu-bar">File&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Format&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Help</p>
 
-        <embed class="resume-display" src="content/HNagpal-Resume.pdf"/>
+        <embed id="resume-display" src="content/HNagpal-Resume.pdf"/>
     
     </div>
 
 
     <div id="taskbar">
-        <div id="start" class="startRest ms-sans">Start</div>
+        <div id="start" class="startRest ms-sans clearfix">Start</div>
+        <span id="about-taskbar" class="taskbar-icon taskbar-icon-rest clearfix">about.txt</span>
+        <span id="resume-taskbar" class="taskbar-icon taskbar-icon-rest clearfix">resume.pdf</span>
         <div id="startMenu">
             <div id="left">
                 <div class="b">
