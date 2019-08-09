@@ -116,6 +116,7 @@ h2 {
     left: 0px;
     right: 0px;
     border-top: ridge 2px white;
+    z-index: 99;
 }
 
 #start {
@@ -209,13 +210,13 @@ h2 {
 /* POPUPS ***********************************************/
 
 .popup{
-    width:292px;
+    width:400px;
     background:#C0C0C0;
     border-width:1px;
     border-color:#FFFFFF #808080 #808080 #FFFFFF;
     border-style:solid;
     position:absolute;
-    top:25%;
+    top:10%;
     left:25%;
     /* transform: translate(-50%,-50%); */
     padding:1px;
@@ -259,12 +260,11 @@ div.popup-text{
     height:100%;
     width:calc(100% - 26px);
     display:inline-block;
-}
-div.popup-text p{
     font-family:"ms-sans";
     font-size:16px;
-    color: white;
+    color: black;
 }
+
 div.popup-text button{
     font-family:"ms-sans";
     font-size:12px;

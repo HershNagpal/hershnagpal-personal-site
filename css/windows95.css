@@ -24,6 +24,7 @@ body div {
     border-left: ridge 3px white;
     border-bottom: ridge 2px black;
     border-right: ridge 2px grey;
+    z-index: 99;
 }
 
 #startMenu #left {
