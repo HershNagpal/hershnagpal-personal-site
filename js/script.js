@@ -134,21 +134,21 @@ $('.close-resume').click(function () {
 });
 
 // INTERNET PAGES //////////////////////////////////////
+// $('#linkedin').click(function () {
+//     $('#ie-frame').attr('src','https://www.linkedin.com/in/hershnagpal');
+//     $('#ie-title').text("  Hersh's Linkedin Page - Microsoft Internet Explorer");
+// });
+
+// $('#instagram').click(function () {
+//     $('#ie-frame').attr('src','https://www.instagram.com/wafer_wave');
+//     $('#ie-title').text("  wafer_wave's Instagram Page - Microsoft Internet Explorer");
+// });
+
+//Open pages on click
 $('#linkedin').click(function () {
-    $('#ie-frame').attr('src','https://www.linkedin.com/in/hershnagpal');
-    $('#ie-title').text("  Hersh's Linkedin Page - Microsoft Internet Explorer");
-});
-
-$('#instagram').click(function () {
-    $('#ie-frame').attr('src','https://www.instagram.com/wafer_wave');
-    $('#ie-title').text("  wafer_wave's Instagram Page - Microsoft Internet Explorer");
-});
-
-//Open pages on doubleclick
-$('#linkedin').dblclick(function () {
     window.open('https://www.linkedin.com/in/hershnagpal','_blank');
 });
-$('#instagram').dblclick(function () {
+$('#instagram').click(function () {
     window.open('https://www.instagram.com/wafer_wave','_blank');
 });
 
@@ -165,22 +165,22 @@ $('.close-ie').click(function () {
     $('#ie-popup').css('z-index','1');
 });
 // Show ie window when an ie icon is clicked
-$('.ie').click(function () {
-    $("#ie-popup").show();
-    $("#ie-taskbar").show();
-    $('#ie-taskbar').addClass('taskbar-icon-click');
-    unfocusWindows();
-    $('#ie-popup').css('z-index','3');
-    $('#ie-popup').css('top','2%');
-    $('#ie-popup').css('left','15%');
-    // $('#resume-popup').css('height', '90%');
-    // $('#resume-popup').css('width', '70%');
-});
+// $('.ie').click(function () {
+//     $("#ie-popup").show();
+//     $("#ie-taskbar").show();
+//     $('#ie-taskbar').addClass('taskbar-icon-click');
+//     unfocusWindows();
+//     $('#ie-popup').css('z-index','3');
+//     $('#ie-popup').css('top','2%');
+//     $('#ie-popup').css('left','15%');
+//     // $('#resume-popup').css('height', '90%');
+//     // $('#resume-popup').css('width', '70%');
+// });
 // Show ie window when clicking on the taskbar icon
-$('#ie-taskbar').click(function () {
-    $('#ie-popup').toggle();
-    // $(this).toggleClass("taskbar-icon-rest");
-    $(this).toggleClass('taskbar-icon-click');
-    unfocusWindows();
-    $('#ie-popup').css('z-index','3');
-});
+// $('#ie-taskbar').click(function () {
+//     $('#ie-popup').toggle();
+//     // $(this).toggleClass("taskbar-icon-rest");
+//     $(this).toggleClass('taskbar-icon-click');
+//     unfocusWindows();
+//     $('#ie-popup').css('z-index','3');
+// });
