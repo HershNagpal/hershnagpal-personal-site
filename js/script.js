@@ -12,7 +12,6 @@ $(document).ready(function () {
         $('#startMenu').toggle();
         $(this).toggleClass('startClick');
     });
-    // Toggle the about page when the taskbar is clicked
 
     // Close windows when clicking close button
     $('.close-popup').click(function () {
@@ -83,7 +82,6 @@ $('#about').click(function () {
     $('#about-popup').css('left','25%');
     // $('#about-popup').css('height', '45%');
     // $('#about-popup').css('width', '45%');
-
 });
 // Close the about page when the x is clicked
 $('.close-about').click(function () {
@@ -96,6 +94,31 @@ $('.close-about').click(function () {
 $('#minimize-about').click(function () {
     $("#about-popup").hide();
     $('#about-taskbar').removeClass('taskbar-icon-click');
+});
+
+// SKILLS PAGE //////////////////////////////
+$('#skills').click(function () {
+    $("#skills-popup").show();
+    $("#skills-taskbar").show();
+    $('#skills-taskbar').addClass('taskbar-icon-click');
+    unfocusWindows();
+    $('#skills-popup').css('z-index','3');
+    $('#skills-popup').css('top','10%');
+    $('#skills-popup').css('left','25%');
+    // $('#skills-popup').css('height', '45%');
+    // $('#skills-popup').css('width', '45%');
+});
+// Close the skills page when the x is clicked
+$('.close-skills').click(function () {
+    $("#skills-popup").hide();
+    $("#skills-taskbar").hide();
+    $('#skills-taskbar').removeClass('taskbar-icon-click');
+    $('#skills-popup').css('z-index','1');
+});
+// Minimize the skills page when the _ button is clicked
+$('#minimize-skills').click(function () {
+    $("#skills-popup").hide();
+    $('#skills-taskbar').removeClass('taskbar-icon-click');
 });
 
 

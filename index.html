@@ -27,9 +27,14 @@
         <h4 class="icon-label">resume.pdf</h4>
     </div>
 
+    <div class="icon ms-sans" id="skills">
+        <h4 class="icon-label">skills.txt</h4>
+    </div>
+
     <div class="icon ms-sans ie" id="linkedin">
         <h4 class="icon-label">linkedin.com</h4>
     </div>
+
     <div class="icon ms-sans ie" id="instagram">
         <h4 class="icon-label">instagram.com</h4>
     </div>
@@ -87,6 +92,30 @@
         </div>
     </div>
 
+    <div id="skills-popup" class="popup resizeable clearfix">
+        <div class="title clearfix">
+            <img src="images/icons/txt.png" width="17" height="17" class="title"/>
+            <p class="title">&nbsp;&nbsp;&nbsp;skills.txt - Notepad</p>
+            <button class="close-popup close-skills">X</button>
+            <button id="maximize-skills">&#9633;</button>
+            <button id="minimize-skills">_</button>
+        </div>
+        <p class="menu-bar">File&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Format&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Help</p>
+    
+        <div class="text-box"> 
+            <div class="popup-text">
+                <h4>Programming Languages</h4>
+                <ul>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>                    
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <div id="resume-popup" class="popup resizeable clearfix">
         <div class="title clearfix">
             <img src="images/icons/doc.png" width="17" height="17" class="title"/>
@@ -96,27 +125,27 @@
             <button id="minimize-resume">_</button>
         </div>
         <p class="menu-bar">File&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Format&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Help</p>
-
         <embed id="resume-display" src="content/HNagpal-Resume.pdf"/>
-    
     </div>
 
     <div id="ie-popup" class="popup resizeable clearfix">
-            <div class="title clearfix">
-                <img src="images/icons/ie.png" width="17" height="17" class="title"/>
-                <p id="ie-title" class="title">&nbsp;&nbsp;&nbsp;Microsoft Internet Explorer</p>
-                <button class="close-popup close-ie">X</button>
-                <button id="maximize-ie">&#9633;</button>
-                <button id="minimize-ie">_</button>
-            </div>
-            <p class="menu-bar">File&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;View&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Favorites&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tools&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Help</p>
-            <iframe id="ie-frame" src=""></iframe>
+        <div class="title clearfix">
+            <img src="images/icons/ie.png" width="17" height="17" class="title"/>
+            <p id="ie-title" class="title">&nbsp;&nbsp;&nbsp;Microsoft Internet Explorer</p>
+            <button class="close-popup close-ie">X</button>
+            <button id="maximize-ie">&#9633;</button>
+            <button id="minimize-ie">_</button>
         </div>
+        <p class="menu-bar">File&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;View&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Favorites&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tools&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Help</p>
+        <iframe id="ie-frame" src=""></iframe>
+    </div>
+    
 
     <div id="taskbar">
         <div id="start" class="startRest ms-sans clearfix">Start</div>
         <span id="about-taskbar" class="taskbar-icon taskbar-icon-rest clearfix">about.txt</span>
         <span id="resume-taskbar" class="taskbar-icon taskbar-icon-rest clearfix">resume.pdf</span>
+        <span id="skills-taskbar" class="taskbar-icon taskbar-icon-rest clearfix">skills.txt</span>
         <span id="ie-taskbar" class="taskbar-icon taskbar-icon-rest clearfix">Internet Explorer</span>
         <div id="startMenu">
             <div id="left">
