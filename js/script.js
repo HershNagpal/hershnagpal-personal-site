@@ -174,6 +174,9 @@ $('#linkedin').click(function () {
 $('#instagram').click(function () {
     window.open('https://www.instagram.com/wafer_wave','_blank');
 });
+$('#github').click(function () {
+    window.open('https://github.com/HershNagpal','_blank');
+});
 
 // Minimize the ie window when the _ button is clicked
 $('#minimize-ie').click(function () {
