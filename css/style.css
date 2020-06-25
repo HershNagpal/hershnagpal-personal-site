@@ -265,9 +265,6 @@ p.title{
     font-size:14px;
 }
 .title button{
-    /*position:absolute;
-    right:3px;
-    top:3px;*/
     margin:2px 2px 2px 0;
     float:right;
     width:14px;
